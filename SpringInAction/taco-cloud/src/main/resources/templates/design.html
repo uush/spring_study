@@ -32,7 +32,7 @@
               type="checkbox"
               th:value="${ingredient?.id}"
             />
-            <span th:text="${ingredient.name}">INGREDIENT</span><br />
+            <span th:text="${ingredient?.name}">INGREDIENT</span><br />
           </div>
         </div>
 
@@ -44,7 +44,7 @@
               type="checkbox"
               th:value="${ingredient?.id}"
             />
-            <span th:text="${ingredient.name}">INGREDIENT</span><br />
+            <span th:text="${ingredient?.name}">INGREDIENT</span><br />
           </div>
         </div>
 
@@ -56,7 +56,7 @@
               type="checkbox"
               th:value="${ingredient?.id}"
             />
-            <span th:text="${ingredient.name}">INGREDIENT</span><br />
+            <span th:text="${ingredient?.name}">INGREDIENT</span><br />
           </div>
         </div>
 
@@ -68,7 +68,7 @@
               type="checkbox"
               th:value="${ingredient?.id}"
             />
-            <span th:text="${ingredient.name}">INGREDIENT</span><br />
+            <span th:text="${ingredient?.name}">INGREDIENT</span><br />
           </div>
         </div>
 
@@ -80,7 +80,7 @@
               type="checkbox"
               th:value="${ingredient?.id}"
             />
-            <span th:text="${ingredient.name}">INGREDIENT</span><br />
+            <span th:text="${ingredient?.name}">INGREDIENT</span><br />
           </div>
         </div>
       </div>
@@ -91,6 +91,7 @@
         <span th:text="${#fields.hasErrors('name')}">XXX</span>
         <span
           class="validationError"
+          ingredient?.name
           th:if="${#fields.hasErrors('name')}"
           th:errors="*{name}"
           >Name Error</span

@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j // SLF4J Logger 객체 생성, 주문 상세 내역을 log로 기록
 @Controller
-@RequestMapping("./orders") // ./orders로 시작하는 경로의 요청을 해당 컨트롤러의 요청 처리 메서드가 처리한다.
+@RequestMapping("/orders") // ./orders로 시작하는 경로의 요청을 해당 컨트롤러의 요청 처리 메서드가 처리한다.
 public class OrderController {
 
     @GetMapping("/current")
