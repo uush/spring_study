@@ -3,6 +3,7 @@ package com.example.taco_cloud;
 import lombok.Data;
 
 @Data
+
 public class Order {
 
     private String deliveryName;
